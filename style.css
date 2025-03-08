@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    width: 45vw;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+
+h1 {
+    font-size: 2vw;
+    color: gainsboro;
+    border-bottom: 0.25vw solid gainsboro;
+    text-align: center;
+}
+
+p {
+    font-size: 1vw;
+    color: gainsboro;
+    text-align: center;
+}
+
+#output {
+    width: 80vw;
+    height: 32vw;
+    padding: 1vw;
+    background-color: rgb(32, 32, 32);
+    border: 0.2vw solid gainsboro;
+    border-radius: 0.5vw;
+    resize: none;
+    color: gainsboro;
+    overflow: hidden;
+    white-space: pre;
+    font-family: Consolas, "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.2vw;
+    overflow: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: gainsboro #333;
+}
+
+#output::-webkit-scrollbar {
+    width: 1vw;
+    height: 1vh;
+    background: #333; 
+    border-radius: 1vw; 
+}
+
+#output::-webkit-scrollbar-thumb {
+    background: gainsboro;
+    border-radius: 1vw;
+    cursor: pointer; 
+}
+
+#output::-webkit-scrollbar-thumb:hover {
+    background: #aaa; 
+}
+
+#holder {
+    display: flex;
+    gap: 1vw;
+}
+
+button {
+    width: 7vw;
+    height: 3vw;
+    background-color: rgb(32, 32, 32);
+    border: 0.2vw solid gainsboro;
+    border-radius: 0.5vw;
+    color: gainsboro;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: opacity 0.5s ease;
+}
+
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.non_generated {
+    font-family: Consolas, "Courier New", monospace;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: red;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 7vw;
+    height: 3vh;
+    background: #333;
+    border-radius: 1vw;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 1vw;
+    background: gainsboro;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 1vw;
+    background: gainsboro;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 1vw;
+    background: gainsboro;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #main {
+        width: 95vw;
+        height: 100vh;
+        gap: 2vh;
+    }
+
+    h1 {
+        font-size: 3vh;
+        border-bottom: 0.25vh solid gainsboro;
+        border-radius: 0.2vh;
+    }
+
+    p {
+        font-size: 1.7vh;
+    }
+
+    #output {
+        width: 95vw;
+        height: 25vh;
+        border-radius: 1vh;
+        font-size: 1.5vh;
+    }
+    
+    #holder {
+        gap: 1vh;
+        flex-direction: column;
+    }
+
+    button {
+        width: 40vw;
+        height: 8vh;
+        font-size: 1.5vh;
+        border-radius: 1vh;
+        font-size: 2vh;
+    }
+
+    .non_generated {
+        font-size: 1.5vh;
+    }
+
+    input[type=range] {
+        width: 40vw;
+        height: 3vh; 
+        border-radius: 1vh;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 1vh;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 1vh;
+    }
+    
+    input[type=range]::-ms-thumb {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 1vh;
+    }
+}
+

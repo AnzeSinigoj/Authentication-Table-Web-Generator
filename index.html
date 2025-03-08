@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/table.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>AuthTable Generator</title>
+    </head>
+    <body>  
+        <div id="main">
+            <h1>Authentication table generator</h1>
+            <p>A simple program to generate auth tables for IFF on unthrusted communication channels.</p>
+            <div id="output">No table yet</div>
+            <div id="holder">
+                <div>
+                    <input type="range" id="table-count" min="1" max="10" value="1"> 
+                    <p id="count-label">Table count: 1</p>
+                </div>
+                <div>
+                    <input type="range" id="table-length" min="1" max="10" value="1">
+                    <p id="lenght-label">Table length: 1</p>
+                </div>
+                <button id="gen" title="Generate a table">Generate</button>
+                <button id="copy" title="Copy to clipboard">Copy</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
