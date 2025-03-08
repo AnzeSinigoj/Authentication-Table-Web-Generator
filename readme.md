@@ -29,7 +29,7 @@ exchange and verification in environments with potential security risks. Ideal f
 
 **The responding team member then replies with:**
 
-"IW  W " [juliet xray] [whiskey]
+"JX  W " [juliet xray] [whiskey]
 
 ### Authentication Success:
 
