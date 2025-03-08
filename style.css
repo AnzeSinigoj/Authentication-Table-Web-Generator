@@ -48,8 +48,8 @@ p {
 }
 
 #output {
-    width: 80vw;
-    height: 32vw;
+    max-width: 80vw;
+    max-height: 32vw;
     padding: 1vw;
     background-color: rgb(32, 32, 32);
     border: 0.2vw solid gainsboro;
@@ -168,8 +168,8 @@ input[type=range]::-ms-thumb {
     }
 
     #output {
-        width: 95vw;
-        height: 25vh;
+        max-width: 93vw;
+        max-height: 40vh;
         border-radius: 1vh;
         font-size: 1.5vh;
     }
